@@ -160,6 +160,14 @@
         visibility: hidden;
         opacity: 0;
         transition: all .3s;
+
+        @media only screen and (max-width: $bp-medium) {
+            top: 101%;
+        }
+
+        @media only screen and (max-width: $bp-xsmall) {
+            top: 110%;
+        }
     }
 
     &--icon {
@@ -224,6 +232,14 @@
     visibility: hidden;
     opacity: 0;
     transition: all .3s;
+
+    @media only screen and (max-width: $bp-medium) {
+        top: 101%;
+    }
+
+    @media only screen and (max-width: $bp-xsmall) {
+        top: 110%;
+    }
 }
 
 .messenger__header {

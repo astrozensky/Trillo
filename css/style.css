@@ -281,6 +281,16 @@ body {
   opacity: 0;
   transition: all 0.3s;
 }
+@media only screen and (max-width: 56.25em) {
+  .user-nav__user-menu--box {
+    top: 101%;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .user-nav__user-menu--box {
+    top: 110%;
+  }
+}
 .user-nav__user-menu--icon {
   height: 1.25rem;
   width: 1.25rem;
@@ -330,6 +340,16 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s;
+}
+@media only screen and (max-width: 56.25em) {
+  .messenger__box {
+    top: 101%;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .messenger__box {
+    top: 110%;
+  }
 }
 
 .messenger__header {
