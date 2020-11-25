@@ -128,7 +128,75 @@
         border-radius: 50%;
         margin-right: 1rem;
     }
+
+    &__user {
+        position: relative;
+
+        &:hover > .user-nav__user-menu--box {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
   
+}
+
+//////////////////////////////////
+// USER SUB MENU
+//////////////////////////////////
+
+.user-nav__user-menu {
+    list-style: none;
+    padding: 1rem;
+    width: 13rem;
+
+    &--box {
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 4;
+        background-color: var(--color-grey-dark-1);
+        box-shadow: var(--shadow-dark);
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s;
+    }
+
+    &--icon {
+        height: 1.25rem;
+        width: 1.25rem;
+        margin-right: 1rem;
+        fill: var(--color-grey-light-1);
+    }
+
+    &--item {
+        
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &--link:link,
+    &--link:visited {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--color-grey-light-1);
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+        transition: all .2s;
+    }
+
+    &--link:hover &--icon {
+        fill: var(--color-primary);
+    }
+
+    &--link:hover {
+        color: var(--color-primary);
+        text-decoration: underline;
+        transform: translateX(.5rem);
+    }
 }
 
 //////////////////////////////////
