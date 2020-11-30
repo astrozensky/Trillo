@@ -1,2 +1,2 @@
 # Trillo
-Front end design, for a booking app, that I made for practice.
+Front end design project, built while learning SCSS and Flexbox.
